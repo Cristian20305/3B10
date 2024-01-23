@@ -22,7 +22,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
+.container p {
     text-align: center;
     margin-bottom: 40px;
 }
@@ -48,6 +48,8 @@ p {
     width: 40%;
     height: auto;
     border-radius: 5px;
+    display: block;     /* Centra las imagen de los cuadrados  */
+    margin: 0 auto;     /* Centra las imagen de los cuadrados  */
 }
 
 .service p {
@@ -67,6 +69,45 @@ p {
         width: 50%;
     }
 }
+/*Pies estilo  */
+* {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        footer {
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        footer h2 {
+            font-size: 0.9em;
+        }
+        #aviso {
+            width: 80%; /* Ajuste el ancho del div aviso */
+            text-align: center;
+        }
+        #redes {
+            width: 20%; /* Ajuste el ancho del div redes */
+            text-align: right;
+        }
+        #copy {
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid white;
+            margin-top: 10px; /* Agregue un margen superior para separar del contenido anterior */
+        }
+        @media (max-width: 700px) {
+            body {
+            background-color: blue;
+            }
+            #aviso, #redes {
+                width: 100%;
+                text-align: center;
+            }
+        }
 
 </style>
 
@@ -104,5 +145,19 @@ p {
                 <p>Diseño web   </p>
             </div>
         </div>
-    </div>        
+    </div>
+    <footer>
+        <div id="aviso">
+            <h2>Aviso</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi aliquam minus vel iure cumque fugit? At maiores aut iusto, nostrum tenetur reiciendis repellat possimus commodi, dolores ea repudiandae sint reprehenderit.</p>
+        </div>
+        <div id="redes">
+            <h2>Enlaces</h2>
+            <p>Facebook</p>
+            <p>Instagram</p>
+        </div>
+        <div id="copy">
+            <p>Copyright 2023</p>
+        </div>
+    </footer>        
 </body>              
